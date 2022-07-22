@@ -1,0 +1,74 @@
+html { 
+	background-image: url('bs.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body {
+	display: flex;
+	height: 95%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+input {
+	border: 3px solid #acaabf;
+	padding: 12px;
+	margin-top: 12px;
+	width: 95%;
+	text-align: center;
+	border-radius: 3px;
+	font-family: 'Economica', sans-serif;
+	font-size: 16px;
+	color: #4d4c54;
+}
+
+input:focus { 
+	border: 3px solid #4d4c54;
+	text-align: center;
+}
+
+label {
+	font-size: 36px;
+   	color: #4d4c54;
+	font-family: Economica, sans-serif;
+}
+
+span {
+	font-size: 28px;
+	margin: 12px;
+	color: #4d4c54;
+	font-family: Economica, sans-serif;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+    background: rgba(255, 255, 255, 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	width: 30%;
+	height: 300px;
+	border: 1px solid rgba(255, 255, 255, 0.04);
+	border-radius: 16px;
+	backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+	margin: 12px;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+
+:-ms-input-placeholder {
+	font-family: 'Economica', sans-serif;
+	font-size: 20px;
+}
+
+@media (max-width: 414px) {
+	body {flex-direction: column;}
+	.card {width: 80%; height: 30%;}
+}
+
+@media (max-width: 768px, min-width: 415px) {
+	.card {width: 33%; height: 30%;}
+}
